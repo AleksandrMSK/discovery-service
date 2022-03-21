@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.discovery'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-websocket:2.6.4'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.1.1'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.7'
+
+}
+
+test {
+    useJUnitPlatform()
+}
